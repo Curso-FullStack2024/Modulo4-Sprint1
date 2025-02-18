@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion } from "motion/react"
+import { motion } from 'framer-motion'
 
 import equipo from './../assets/equipo.png'
 import { animaciones } from '../utils/animation'
@@ -48,7 +48,7 @@ const Body = () => {
             <motion.div
                 variants={animaciones()}
                 initial='initial'
-                animate={['scaleUp']}
+                animate={['scaleUpDown']}
             >
                 <img src={equipo} alt='foto_equipo' className='rounded-full ' />
             </motion.div>

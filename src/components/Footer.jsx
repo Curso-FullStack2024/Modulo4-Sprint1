@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
@@ -10,9 +11,25 @@ const Footer = () => {
       </ul>
 
       <div className='flex  flex-row w-full justify-center content-stretch gap-5 text-xl'>
-        <div><i className="bi bi-instagram"></i></div>
-        <div><i className="bi bi-facebook"></i></div>
-        <div><i className="bi bi-twitter-x"></i></div>
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+        >
+          <i className="bi bi-instagram"></i>
+        </ motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+        ><i className="bi bi-facebook"></i>
+        </motion.div>
+
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          whileTap={{ scale: 0.8 }}
+        ><i className="bi bi-twitter-x"></i>
+        </motion.div>
+
       </div>
 
 

@@ -3,20 +3,31 @@ export const animaciones = () => {
         initial: {
             scale: 1
         },
-        scaleUp: {
+        initial_0: {
+            scale: 0,
+            opacity: 0
+        },
+        initial_menu: {
+            opacity: 0,
+            scale: 1,
+            y: -100
+        },
+        scaleUpDown: {
             scale: [1.1, 1, 0.9, 1, 1.1],
-
             transition: {
                 duration: 10,
                 repeat: Infinity
             }
         },
-        scaleDown: {
-            scale: 0.9,
-            transition: {
-                duration: 5,
-                repeat: Infinity
-            }
+        animate_menu: {
+            opacity: 1,
+            scale: 1,
+            y: 0
+        },
+        exit_menu: {
+            opacity: 0,
+            scale: 1,
+            y: -100
         }
     }
 }
