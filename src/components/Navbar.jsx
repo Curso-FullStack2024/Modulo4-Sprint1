@@ -30,6 +30,7 @@ const Navbar = () => {
 
 
             {/* menu mobile */}
+           
             {/* <div className='bg-blue-900 md:hidden '>
                 { // dependiendo del valor del isOpen muestra icono para abrir o cerrar el menu                   
                     isOpen ? <i className="bi bi-x-square text-2xl hover:text-3xl" onClick={toggleMenu}></i>
